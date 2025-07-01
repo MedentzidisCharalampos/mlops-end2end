@@ -106,7 +106,4 @@ docker run -p 8000:8000 mlops-pipeline
 - Use `dvc push` to upload models/data to remote
 - Use `dvc pull` to retrieve data/models
 
-## 📌 TODO (Suggestions for Expansion)
-- Add Streamlit frontend for predictions
-- Add monitoring/logging (e.g., Prometheus + Grafana)
-- Add PostgreSQL/SQLite integration for persistence
+
