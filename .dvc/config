@@ -1,0 +1,4 @@
+[core]
+    remote = localremote
+['remote "localremote"']
+    url = C:\Users\raf_m\OneDrive\Documents\GitHub\mlops-end2end\dvc-storage

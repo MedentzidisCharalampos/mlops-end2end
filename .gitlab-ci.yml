@@ -1,0 +1,30 @@
+# GitLab CI config
+stages:
+  - build
+  - preprocess
+  - train
+  - evaluate
+
+build:
+  image: python:3.10
+  stage: build
+  script:
+    - pip install -r requirements.txt
+
+preprocess:
+  image: python:3.10
+  stage: preprocess
+  script:
+    - python src/data/preprocess.py
+
+train:
+  image: python:3.10
+  stage: train
+  script:
+    - python src/models/train.py
+
+evaluate:
+  image: python:3.10
+  stage: evaluate
+  script:
+    - python src/models/evaluate.py
